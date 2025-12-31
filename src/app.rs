@@ -21,7 +21,7 @@ pub fn App() -> impl IntoView {
                         on:click=move |_| set_sidebar_open.set(false)
                     ></div>
                     <main class="flex-1 p-8 ml-64 overflow-y-auto">
-                        <Routes fallback=|| view! { "Not Found" }>
+                        <Routes fallback=|| view! { <div class="text-white">"Not Found"</div> }>
                             <Route path=path!("/") view=Home />
                             <Route path=path!("/lesson/:id") view=LessonPage />
                         </Routes>
