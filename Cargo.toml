@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-leptos = { version = "0.7", features = ["csr"] }
-leptos_router = { version = "0.7" }
+leptos = { version = "0.8.15", features = ["csr"] }
+leptos_router = { version = "0.8.11" }
 web-sys = { version = "0.3", features = ["Window", "Document", "Element", "HtmlElement"] }
 console_error_panic_hook = "0.1"
 tracing = "0.1"
